@@ -20,15 +20,15 @@ public class TimetableApplication  extends SpringBootServletInitializer {
 
     // 在某配置类中添加如下内容
     // 监听的http请求的端口,需要在application配置中添加http.port=端口号  如80
-    @Value("${http.port}")
+    /*@Value("${http.port}")
     Integer httpPort;
 
     //正常启用的https端口 如443
     @Value("${server.port}")
     Integer httpsPort;
-
+*/
     // springboot2 写法
-    @Bean
+    /*@Bean
     public TomcatServletWebServerFactory servletContainer() {
         TomcatServletWebServerFactory tomcat = new TomcatServletWebServerFactory() {
             @Override
@@ -55,6 +55,6 @@ public class TimetableApplication  extends SpringBootServletInitializer {
         //监听到http的端口号后转向到的https的端口号
         connector.setRedirectPort(httpsPort);
         return connector;
-    }
+    }*/
 
 }
